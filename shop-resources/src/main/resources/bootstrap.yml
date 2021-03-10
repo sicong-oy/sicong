@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9999
+      profile: eureka-client,resources
+      name: application
+# fastdfs的配置
+fdfs:
+  connect-timeout: 3000 #java连接tacker服务超时时间
+  so-timeout: 3000 #上传时间
+  tracker-list:
+    - 192.168.30.99:22122 #tacker的服务地址
+  thumb-image: #图片缩略图大小
+    height: 100
+    width: 100

@@ -1,0 +1,7 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: shop-resources
+fdfs:
+  server: http://192.168.30.99:8080/

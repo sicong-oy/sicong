@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9999
+      profile: eureka-client,zuul
+      name: application
+zuul:
+  routes:
+    static:
+      path: /group1/**
+      url: http://192.168.30.99:8080/group1
